@@ -20,7 +20,7 @@ AutoBazar+ je moderní jednostránková webová aplikace, která umožňuje uži
 
 ## **Návrh obsahových sekcí**
 
-- **Úvod 
+- **Úvod** 
     – Název aplikace, krátký popis
     
 - **Filtry & vyhledávání**  
@@ -33,7 +33,7 @@ AutoBazar+ je moderní jednostránková webová aplikace, která umožňuje uži
 - **Detail auta (modální okno)**  
     – fotka auta, technické údaje, popis
     
-- **O projektu  
+- **O projektu**  
     – krátké info...
     
 - **Kontakt / Footer**
