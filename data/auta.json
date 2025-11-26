@@ -1,0 +1,42 @@
+{
+  "auta": [
+    {
+      "id": 1,
+      "vin": "WVWZZZ1KZ6W000001",
+      "znacka": "Škoda",
+      "model": "Octavia",
+      "rok_vyroby": 2018,
+      "najed": 125000,
+      "palivo": "Benzín",
+      "vykon_kw": 110,
+      "prevodovka": "Manuál",
+      "barva": "Bílá",
+      "cena": 329000,
+      "popis": "Pravidelný servis, garážované.",
+      "prodejce_id": 2,
+      "fotky": [
+        "img/aut1_1.jpg",
+        "img/aut1_2.jpg"
+      ],
+      "vybava": [1, 2, 5]
+    }
+  ],
+
+  "vybava": [
+    {
+      "id": 1,
+      "nazev": "ABS",
+      "kategorie": "Bezpečnost"
+    },
+    {
+      "id": 2,
+      "nazev": "Tempomat",
+      "kategorie": "Komfort"
+    },
+    {
+      "id": 5,
+      "nazev": "Parkovací senzory",
+      "kategorie": "Asistenti"
+    }
+  ]
+}
