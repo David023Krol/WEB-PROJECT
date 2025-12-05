@@ -241,3 +241,82 @@ footer {
     font-weight: bold;
     margin-bottom: 20px !important;
 }
+
+/* --- SLIDER/GALERIE STYLY V DETAILU --- */
+
+.slider-container {
+    position: relative; /* Důležité pro umístění šipek */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-detail-photo {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block; /* Odstraní případné mezery pod obrázkem */
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none; /* Nepovolit výběr textu */
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: opacity 0.2s, background-color 0.2s;
+}
+
+.slider-btn:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.foto-index {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Ostatní styly pro detail (pro úplnost a kontext) */
+.auto-detail-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+.detail-info-block {
+    grid-column: 2 / 3;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.detail-gallery {
+    grid-column: 1 / 2;
+}
+.detail-description {
+    grid-column: 1 / -1; 
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}

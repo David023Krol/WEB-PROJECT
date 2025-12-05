@@ -4,6 +4,8 @@ const autaSection = document.getElementById('auta');
 const detailView = document.getElementById('detail-auto-view');
 
 let vsechnaAuta = [];
+let aktualniAuto = null; // Proměnná pro uložení detailu aktuálního auta
+let aktualniIndexFotky = 0; // Index aktuálně zobrazené fotky
 
 // --- FUNKCE PRO PŘEPÍNÁNÍ POHLEDŮ ---
 function prepniNaSeznam() {
@@ -18,14 +20,36 @@ function prepniNaDetail() {
     detailView.style.display = 'block';
 }
 
+// --- NOVÁ FUNKCE: ZMĚNA FOTKY V GALERII ---
+function zmenFotku(smer) {
+    if (!aktualniAuto || !aktualniAuto.galerie || aktualniAuto.galerie.length === 0) return;
+
+    const pocetFotografií = aktualniAuto.galerie.length;
+    
+    // Nový index = (aktuální index + směr + počet) MODULO počet
+    // Tím zajistíme, že se index "zacyklí" (posune se na konec/začátek)
+    aktualniIndexFotky = (aktualniIndexFotky + smer + pocetFotografií) % pocetFotografií;
+    
+    const novaURL = aktualniAuto.galerie[aktualniIndexFotky];
+    document.getElementById('hlavni-foto').src = novaURL;
+    
+    // Zobrazení indexu (např. 1/3)
+    document.getElementById('foto-index').textContent = `${aktualniIndexFotky + 1} / ${pocetFotografií}`;
+}
+
 
 // --- ZOBRAZENÍ DETAILU AUTA (NOVÁ STRÁNKA) ---
 function zobrazDetail(auto) {
     prepniNaDetail();
     detailView.innerHTML = ''; 
+    aktualniAuto = auto; // Uložíme aktuální auto do globální proměnné
+    aktualniIndexFotky = 0; // Vždy začínáme od první fotky
 
     const cenaFormat = (auto.cena || 0).toLocaleString('cs-CZ', { style: 'currency', currency: 'CZK', minimumFractionDigits: 0 });
     const najetoFormat = (auto.najeto || 0).toLocaleString('cs-CZ');
+    
+    const pocatecniFotoURL = (auto.galerie && auto.galerie.length > 0) ? auto.galerie[0] : (auto.foto_url || 'img/placeholder_default.png');
+    const pocetFotografií = (auto.galerie && auto.galerie.length) || 1;
 
     detailView.innerHTML = `
         <button id="zpet-na-seznam" class="back-button">← Zpět na seznam aut</button>
@@ -38,7 +62,16 @@ function zobrazDetail(auto) {
         <div class="auto-detail-grid">
             
             <div class="detail-gallery">
-                <img src="${auto.foto_url || 'img/placeholder_default.png'}" alt="Foto ${auto.znacka} ${auto.model}" class="main-detail-photo">
+                <div class="slider-container">
+                    <img id="hlavni-foto" src="${pocatecniFotoURL}" alt="Foto ${auto.znacka} ${auto.model}" class="main-detail-photo">
+                    
+                    ${pocetFotografií > 1 ? `
+                        <button id="slider-prev" class="slider-btn prev-btn">❮</button>
+                        <button id="slider-next" class="slider-btn next-btn">❯</button>
+                    ` : ''}
+                    
+                    <div id="foto-index" class="foto-index">${pocetFotografií > 1 ? `1 / ${pocetFotografií}` : ''}</div>
+                </div>
             </div>
 
             <div class="detail-info-block">
@@ -58,10 +91,16 @@ function zobrazDetail(auto) {
     `;
 
     document.getElementById('zpet-na-seznam').addEventListener('click', prepniNaSeznam);
+    
+    // Přidání posluchačů na šipky po vygenerování HTML
+    if (pocetFotografií > 1) {
+        document.getElementById('slider-prev').addEventListener('click', () => zmenFotku(-1));
+        document.getElementById('slider-next').addEventListener('click', () => zmenFotku(1));
+    }
 }
 
 
-// --- ZOBRAZENÍ SEZNAMU (GRIDU) ---
+// --- ZOBRAZENÍ SEZNAMU (GRIDU) --- (Beze změny)
 function zobrazAuta(auta) {
     vysledkyElement.innerHTML = ''; 
 
@@ -77,10 +116,11 @@ function zobrazAuta(auta) {
 
         const cenaFormat = (auto.cena || 0).toLocaleString('cs-CZ', { style: 'currency', currency: 'CZK', minimumFractionDigits: 0 });
         const najetoFormat = (auto.najeto || 0).toLocaleString('cs-CZ');
+        const fotoSeznamURL = auto.foto_url || 'img/placeholder_default.png';
 
         autoKarta.innerHTML = `
             <div class="auto-karta-foto-container">
-                <img src="${auto.foto_url || 'img/placeholder_default.png'}" alt="Foto ${auto.znacka}" class="auto-karta-foto">
+                <img src="${fotoSeznamURL}" alt="Foto ${auto.znacka}" class="auto-karta-foto">
             </div>
 
             <h3>${auto.znacka} ${auto.model} (${auto.rok || 'N/A'})</h3>
@@ -110,7 +150,7 @@ function pridejPosluchaceKaret() {
 }
 
 
-// --- PŮVODNÍ FUNKCE (nactiAuta, filtrujAuta) ---
+// --- PŮVODNÍ FUNKCE (nactiAuta, filtrujAuta) --- (Beze změny)
 function nactiAuta(filtry = {}) {
     vysledkyElement.innerHTML = '<p>Načítám data z API...</p>';
     const query = new URLSearchParams(filtry).toString();

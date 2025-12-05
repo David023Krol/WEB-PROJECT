@@ -9,7 +9,11 @@
       "palivo": "Benzín",
       "cena": 850000,
       "najeto": 95000,
-      "foto_url": "img/placeholder_auto.png" 
+      "foto_url": "img/M5-front.png", 
+      "galerie": [
+        "img/M5-front.png",
+        "img/M5-side.png"
+      ]
     },
     {
       "id": 102,
@@ -20,29 +24,56 @@
       "palivo": "Benzín",
       "cena": 1200000,
       "najeto": 45000,
-      "foto_url": "img/placeholder_auto.png"
+      "foto_url": "img/RS6-front.png",
+      "galerie": [
+        "img/RS6-front.png",
+        "img/RS6-side.png"
+      ]
     },
     {
       "id": 103,
-      "znacka": "Mercedes",
-      "model": "AMG GT",
-      "rok": 2021,
+      "znacka": "Mercedes-Benz",
+      "model": "AMG-GT",
+      "rok": 2020,
       "karoserie": "Kupé",
       "palivo": "Benzín",
-      "cena": 1500000,
-      "najeto": 22000,
-      "foto_url": "img/placeholder_auto.png"
+      "cena": 1200000,
+      "najeto": 45000,
+      "foto_url": "img/GT-front.png",
+      "galerie": [
+        "img/GT-front.png",
+        "img/GT-side.png"
+      ]
     },
     {
       "id": 104,
       "znacka": "Lamborghini",
       "model": "Aventador",
-      "rok": 2017,
+      "rok": 2020,
       "karoserie": "Kupé",
       "palivo": "Benzín",
-      "cena": 3500000,
-      "najeto": 18000,
-      "foto_url": "img/placeholder_auto.png"
+      "cena": 1200000,
+      "najeto": 45000,
+      "foto_url": "img/Aventador-front.png",
+      "galerie": [
+        "img/Aventador-front.png",
+        "img/Aventador-side.png"
+      ]
+    },
+    {
+      "id": 105,
+      "znacka": "McLaren",
+      "model": "P1",
+      "rok": 2020,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 1200000,
+      "najeto": 45000,
+      "foto_url": "img/P1-front.png",
+      "galerie": [
+        "img/P1-front.png",
+        "img/P1-side.png"
+      ]
     }
   ]
 }
