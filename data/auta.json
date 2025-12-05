@@ -1,0 +1,48 @@
+{
+  "auta": [
+    {
+      "id": 101,
+      "znacka": "BMW",
+      "model": "M5",
+      "rok": 2018,
+      "karoserie": "Sedan",
+      "palivo": "Benzín",
+      "cena": 850000,
+      "najeto": 95000,
+      "foto_url": "img/placeholder_auto.png" 
+    },
+    {
+      "id": 102,
+      "znacka": "Audi",
+      "model": "RS6",
+      "rok": 2020,
+      "karoserie": "Kombi",
+      "palivo": "Benzín",
+      "cena": 1200000,
+      "najeto": 45000,
+      "foto_url": "img/placeholder_auto.png"
+    },
+    {
+      "id": 103,
+      "znacka": "Mercedes",
+      "model": "AMG GT",
+      "rok": 2021,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 1500000,
+      "najeto": 22000,
+      "foto_url": "img/placeholder_auto.png"
+    },
+    {
+      "id": 104,
+      "znacka": "Lamborghini",
+      "model": "Aventador",
+      "rok": 2017,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 3500000,
+      "najeto": 18000,
+      "foto_url": "img/placeholder_auto.png"
+    }
+  ]
+}

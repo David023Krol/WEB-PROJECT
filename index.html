@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBazar+ | Pokročilá filtrace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <h1>AutoBazar+</h1>
+        <p>Největší online nabídka vozidel</p>
+    </header>
+
+    <section id="filtry" class="content-section filtry-section">
+        
+        <div id="typ-vozidla-filtry" class="vehicle-types">
+            <button data-typ="osobni" class="active"><img src="img/icon_auto.svg" alt="Osobní">Osobní</button>
+            <button data-typ="motorka"><img src="img/icon_motorka.svg" alt="Motorky">Motorky</button>
+            </div>
+
+        <div id="znacka-checkbox-filtry" class="brand-checkboxes">
+            <label class="brand-item">
+                <input type="checkbox" value="Audi"> Audi
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="BMW"> BMW
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Mercedes"> Mercedes-Benz
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Škoda"> Škoda
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Ford"> Ford
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Volkswagen"> Volkswagen
+            </label>
+            <a href="#" class="show-all-brands">Zobrazit všechny značky</a>
+        </div>
+        
+        <div class="filter-grid">
+            <label class="dropdown-container">
+                Cena od
+                <select id="input-cena-min">
+                    <option value="0">Cena od</option>
+                    <option value="100000">100 000 Kč</option>
+                    <option value="500000">500 000 Kč</option>
+                </select>
+            </label>
+            <label class="dropdown-container">
+                Cena do
+                <select id="input-cena-max">
+                    <option value="5000000">Cena do</option>
+                    <option value="1000000">1 000 000 Kč</option>
+                    <option value="500000">500 000 Kč</option>
+                </select>
+            </label>
+
+            <label class="dropdown-container">
+                Rok výroby od
+                <select id="input-rok-od">
+                    <option value="0">Rok výroby od</option>
+                    <option value="2020">2020</option>
+                    <option value="2018">2018</option>
+                    <option value="2015">2015</option>
+                </select>
+            </label>
+            <label class="dropdown-container">
+                Karoserie
+                <select id="input-karoserie">
+                    <option value="">Karoserie</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Kombi">Kombi</option>
+                    <option value="Kupé">Kupé</option>
+                </select>
+            </label>
+            <label class="dropdown-container">
+                Palivo
+                <select id="input-palivo">
+                    <option value="">Palivo</option>
+                    <option value="Benzín">Benzín</option>
+                    <option value="Nafta">Nafta</option>
+                </select>
+            </label>
+            <label class="dropdown-container">
+                Najeto do
+                <select id="input-najeto-do">
+                    <option value="500000">Najeto do</option>
+                    <option value="100000">100 000 km</option>
+                </select>
+            </label>
+
+        </div>
+        
+        <button id="tlacitko-filtr" class="filter-submit-button">Zobrazit</button>
+    </section>
+
+    <section id="auta" class="content-section results-section">
+        <h2>Aktuální nabídka</h2>
+        <div id="vysledky" class="auto-grid">
+            <p>Načítám data...</p>
+        </div>
+    </section>
+
+    <section id="detail-auto-view" class="content-section" style="display:none;">
+    </section>
+
+<section id="auta" class="content-section results-section">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AutoBazar+ Project.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
