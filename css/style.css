@@ -3,12 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #ffffff;
     color: #333;
 }
 
+h1 {
+    color: #B5A579;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .hero-section {
-    background-color: #d50202; 
+    background-color: #013220; 
     color: white;
     padding: 30px 20px;
     text-align: center;
@@ -31,7 +37,7 @@ body {
 }
 
 .vehicle-types button {
-    background: #fff;
+    background: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 6px;
     color: #555;
@@ -51,9 +57,9 @@ body {
 }
 
 .vehicle-types button.active {
-    background-color: #d50202;
+    background-color: #B5A579;
     color: white;
-    border-color: #d50202;
+    border-color: #C0C0C0;
 }
 .vehicle-types button.active img {
     filter: invert(100%); /* Změna ikony na bílou */
@@ -80,13 +86,13 @@ body {
 .brand-item input[type="checkbox"] {
     margin-right: 10px;
     transform: scale(1.2);
-    accent-color: #d50202; /* Barva zaškrtnutého pole */
+    accent-color: #B5A579; /* Barva zaškrtnutého pole */
 }
 
 .show-all-brands {
     grid-column: 4 / 5; /* Zarovnání v posledním sloupci */
     text-align: right;
-    color: #d50202;
+    color: #B5A579;
     text-decoration: none;
     align-self: end;
     padding-bottom: 4px; 
@@ -128,7 +134,7 @@ body {
     width: 100%;
     padding: 15px;
     margin-top: 20px;
-    background-color: #d50202;
+    background-color: #B5A579;
     color: white;
     border: none;
     border-radius: 4px;
@@ -139,7 +145,7 @@ body {
 }
 
 .filter-submit-button:hover {
-    background-color: #a30101;
+    background-color: #AA8762;
 }
 
 /* --- KARTY AUT (Základní) --- */
@@ -151,9 +157,9 @@ body {
 }
 .auto-karta {
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 footer {
