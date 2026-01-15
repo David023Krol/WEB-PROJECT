@@ -1,0 +1,124 @@
+{
+  "auta": [
+    {
+      "id": 201,
+      "znacka": "Harley-Davidson",
+      "model": "Street 750",
+      "rok": 2023,
+      "karoserie": "Cruiser",
+      "palivo": "Benzín",
+      "cena": 250000,
+      "najeto": 5000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    },
+    {
+      "id": 202,
+      "znacka": "Kawasaki",
+      "model": "Ninja H2",
+      "rok": 2023,
+      "karoserie": "SportBike",
+      "palivo": "Benzín",
+      "cena": 480000,
+      "najeto": 3000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    },
+    {
+      "id": 203,
+      "znacka": "Honda",
+      "model": "CB500F",
+      "rok": 2022,
+      "karoserie": "Naked Bike",
+      "palivo": "Benzín",
+      "cena": 180000,
+      "najeto": 12000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    },
+    {
+      "id": 204,
+      "znacka": "Yamaha",
+      "model": "YZF-R1",
+      "rok": 2023,
+      "karoserie": "SportBike",
+      "palivo": "Benzín",
+      "cena": 420000,
+      "najeto": 8000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    },
+    {
+      "id": 205,
+      "znacka": "BMW",
+      "model": "F 900 R",
+      "rok": 2022,
+      "karoserie": "Naked Bike",
+      "palivo": "Benzín",
+      "cena": 350000,
+      "najeto": 15000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    },
+    {
+      "id": 206,
+      "znacka": "Ducati",
+      "model": "Panigale V4",
+      "rok": 2023,
+      "karoserie": "SportBike",
+      "palivo": "Benzín",
+      "cena": 550000,
+      "najeto": 2000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    },
+    {
+      "id": 207,
+      "znacka": "KTM",
+      "model": "Duke 890",
+      "rok": 2022,
+      "karoserie": "Naked Bike",
+      "palivo": "Benzín",
+      "cena": 280000,
+      "najeto": 9000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    },
+    {
+      "id": 208,
+      "znacka": "Suzuki",
+      "model": "GSX-R1000",
+      "rok": 2021,
+      "karoserie": "SportBike",
+      "palivo": "Benzín",
+      "cena": 380000,
+      "najeto": 22000,
+      "typ": "motorka",
+      "foto_url": "img/placeholder_default.png",
+      "galerie": [
+        "img/placeholder_default.png"
+      ]
+    }
+  ]
+}

@@ -4,11 +4,12 @@
       "id": 101,
       "znacka": "BMW",
       "model": "M5",
-      "rok": 2018,
+      "rok": 2021,
       "karoserie": "Sedan",
       "palivo": "Benzín",
-      "cena": 850000,
-      "najeto": 95000,
+      "cena": 1850000,
+      "najeto": 65000,
+      "typ": "osobni",
       "foto_url": "img/M5-front.png", 
       "galerie": [
         "img/M5-front.png",
@@ -19,11 +20,12 @@
       "id": 102,
       "znacka": "Audi",
       "model": "RS6",
-      "rok": 2020,
+      "rok": 2023,
       "karoserie": "Kombi",
       "palivo": "Benzín",
-      "cena": 1200000,
-      "najeto": 45000,
+      "cena": 2450000,
+      "najeto": 32000,
+      "typ": "osobni",
       "foto_url": "img/RS6-front.png",
       "galerie": [
         "img/RS6-front.png",
@@ -34,11 +36,12 @@
       "id": 103,
       "znacka": "Mercedes",
       "model": "AMG-GT",
-      "rok": 2020,
+      "rok": 2022,
       "karoserie": "Kupé",
       "palivo": "Benzín",
-      "cena": 1200000,
-      "najeto": 45000,
+      "cena": 2800000,
+      "najeto": 28000,
+      "typ": "osobni",
       "foto_url": "img/GT-front.png",
       "galerie": [
         "img/GT-front.png",
@@ -49,11 +52,12 @@
       "id": 104,
       "znacka": "Lamborghini",
       "model": "Aventador",
-      "rok": 2020,
+      "rok": 2021,
       "karoserie": "Kupé",
       "palivo": "Benzín",
-      "cena": 1200000,
-      "najeto": 45000,
+      "cena": 4200000,
+      "najeto": 18000,
+      "typ": "osobni",
       "foto_url": "img/Aventador-front.png",
       "galerie": [
         "img/Aventador-front.png",
@@ -67,13 +71,295 @@
       "rok": 2020,
       "karoserie": "Kupé",
       "palivo": "Benzín",
-      "cena": 1200000,
-      "najeto": 45000,
+      "cena": 3800000,
+      "najeto": 22000,
+      "typ": "osobni",
       "foto_url": "img/P1-front.png",
       "galerie": [
         "img/P1-front.png",
         "img/P1-side.png"
       ]
+    },
+    {
+      "id": 106,
+      "znacka": "Porsche",
+      "model": "911 Turbo S",
+      "rok": 2023,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 2950000,
+      "najeto": 15000,
+      "typ": "osobni",
+      "foto_url": "img/turbos-front.png",
+      "galerie": [
+        "img/turbos-front.png",
+        "img/turbos-side.png"
+      ]
+    },
+    {
+      "id": 107,
+      "znacka": "Ferrari",
+      "model": "488 GTB",
+      "rok": 2021,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 4100000,
+      "najeto": 19000,
+      "typ": "osobni",
+      "foto_url": "img/488-front.png",
+      "galerie": [
+        "img/488-front.png",
+        "img/488-side.png"
+      ]
+    },
+    {
+      "id": 108,
+      "znacka": "Tesla",
+      "model": "Model S Plaid",
+      "rok": 2024,
+      "karoserie": "Sedan",
+      "palivo": "Elektro",
+      "cena": 2600000,
+      "najeto": 8000,
+      "typ": "osobni",
+      "foto_url": "img/testa-front.png",
+      "galerie": [
+        "img/testa-front.png",
+        "img/testa-side.png"
+      ]
+    },
+    {
+      "id": 109,
+      "znacka": "Ford",
+      "model": "Mustang GT",
+      "rok": 2022,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 1450000,
+      "najeto": 42000,
+      "typ": "osobni",
+      "foto_url": "img/Mustang-front.png",
+      "galerie": [
+        "img/Mustang-front.png",
+        "img/Mustang-side.png"
+      ]
+    },
+    {
+      "id": 110,
+      "znacka": "Chevrolet",
+      "model": "Camaro SS",
+      "rok": 2021,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 1250000,
+      "najeto": 55000,
+      "typ": "osobni",
+      "foto_url": "img/Camaro-front.png",
+      "galerie": [
+        "img/Camaro-front.png",
+        "img/Camaro-side.png"
+      ]
+    },
+    {
+      "id": 111,
+      "znacka": "Volkswagen",
+      "model": "Golf GTI",
+      "rok": 2022,
+      "karoserie": "Hatchback",
+      "palivo": "Benzín",
+      "cena": 650000,
+      "najeto": 38000,
+      "typ": "osobni",
+      "foto_url": "img/Golf-front.png",
+      "galerie": [
+        "img/Golf-front.png",
+        "img/Golf-side.png"
+      ]
+    },
+    {
+      "id": 112,
+      "znacka": "Honda",
+      "model": "Civic Type R",
+      "rok": 2023,
+      "karoserie": "Hatchback",
+      "palivo": "Benzín",
+      "cena": 750000,
+      "najeto": 28000,
+      "typ": "osobni",
+      "foto_url": "img/Civic-front.png",
+      "galerie": [
+        "img/Civic-front.png",
+        "img/Civic-side.png"
+      ]
+    },
+    {
+      "id": 113,
+      "znacka": "Subaru",
+      "model": "WRX STI",
+      "rok": 2022,
+      "karoserie": "Sedan",
+      "palivo": "Benzín",
+      "cena": 950000,
+      "najeto": 35000,
+      "typ": "osobni",
+      "foto_url": "img/subaru-front.png",
+      "galerie": [
+        "img/subaru-front.png",
+        "img/subaru-side.png"
+      ]
+    },
+    {
+      "id": 114,
+      "znacka": "Nissan",
+      "model": "GT-R",
+      "rok": 2023,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 2200000,
+      "najeto": 18000,
+      "typ": "osobni",
+      "foto_url": "img/octavia-front.png",
+      "galerie": [
+        "img/octavia-front.png",
+        "img/octavia-side.png"
+      ]
+    },
+    {
+      "id": 115,
+      "znacka": "Jaguar",
+      "model": "F-Type R",
+      "rok": 2022,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 1650000,
+      "najeto": 32000,
+      "typ": "osobni",
+      "foto_url": "img/jaguar-front.png",
+      "galerie": [
+        "img/jaguar-front.png",
+        "img/jaguar-side.png"
+      ]
+    },
+    {
+      "id": 116,
+      "znacka": "Cadillac",
+      "model": "CTS-V",
+      "rok": 2021,
+      "karoserie": "Sedan",
+      "palivo": "Benzín",
+      "cena": 1350000,
+      "najeto": 48000,
+      "typ": "osobni",
+      "foto_url": "img/octavia-front.png",
+      "galerie": [
+        "img/octavia-front.png",
+        "img/octavia-side.png"
+      ]
+    },
+    {
+      "id": 117,
+      "znacka": "Alfa Romeo",
+      "model": "Giulia Quadrifoglio",
+      "rok": 2022,
+      "karoserie": "Sedan",
+      "palivo": "Benzín",
+      "cena": 1550000,
+      "najeto": 38000,
+      "typ": "osobni",
+      "foto_url": "img/alfa-front.png",
+      "galerie": [
+        "img/alfa-front.png",
+        "img/alfa-side.png"
+      ]
+    },
+    {
+      "id": 118,
+      "znacka": "Mazda",
+      "model": "MX-5 Miata",
+      "rok": 2023,
+      "karoserie": "Kabriolet",
+      "palivo": "Benzín",
+      "cena": 850000,
+      "najeto": 12000,
+      "typ": "osobni",
+      "foto_url": "img/mazda-front.png",
+      "galerie": [
+        "img/mazda-front.png",
+        "img/mazda-side.png"
+      ]
+    },
+    {
+      "id": 119,
+      "znacka": "Dodge",
+      "model": "Challenger SRT Hellcat",
+      "rok": 2022,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 1850000,
+      "najeto": 28000,
+      "typ": "osobni",
+      "foto_url": "img/Challenger-front.png",
+      "galerie": [
+        "img/Challenger-front.png",
+        "img/Challenger-side.png"
+      ]
+    },
+    {
+      "id": 120,
+      "znacka": "Bentley",
+      "model": "Continental GT",
+      "rok": 2022,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 3950000,
+      "najeto": 18000,
+      "typ": "osobni",
+      "foto_url": "img/bentley-front.png",
+      "galerie": [
+        "img/bentley-front.png",
+        "img/bentley-side.png"
+      ]
+    },
+    {
+      "id": 121,
+      "znacka": "Rolls-Royce",
+      "model": "Wraith",
+      "rok": 2021,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 5200000,
+      "najeto": 12000,
+      "typ": "osobni",
+      "foto_url": "img/rr-front.png",
+      "galerie": [
+        "img/rr-front.png",
+        "img/rr-side.png"
+      ]
+    },
+    {
+      "id": 122,
+      "znacka": "Aston Martin",
+      "model": "DB11",
+      "rok": 2023,
+      "karoserie": "Kupé",
+      "palivo": "Benzín",
+      "cena": 3650000,
+      "najeto": 8000,
+      "typ": "osobni",
+      "foto_url": "img/aston-front.png",
+      "galerie": [
+        "img/aston-front.png",
+        "img/aston-side.png"
+      ]
     }
+
+
+
+
+
+
+
+
+
   ]
 }

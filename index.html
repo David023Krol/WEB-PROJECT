@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoBazar+ | Pokročilá filtrace</title>
+    <title>AutoBazar+ | Pokročilá filtrace</title>  
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="hero-section">
-        <h1>AutoBazar+</h1>
-        <p>Největší online nabídka vozidel</p>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>🚗 AutoBazar+</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home-section" class="nav-link">Domů</a>
+                <a href="#auta-section" class="nav-link">Vozidla</a>
+                <a href="#onas-section" class="nav-link">O nás</a>
+                <a href="#kontakt-section" class="nav-link">Kontakt</a>
+                
+            </nav>
+        </div>
     </header>
 
-    <section id="filtry" class="content-section filtry-section">
+    <section class="hero-banner" id="home-section">
+        <h2>Největší online nabídka vozidel</h2>
+        <p>Najdi svůj ideální vůz s pokročilou filtrací</p>
+    </section>
+
+    <section id="auta-section" class="content-section filtry-section">
         
         <div id="typ-vozidla-filtry" class="vehicle-types">
             <button data-typ="osobni" class="active"><img src="img/icon_auto.svg" alt="Osobní">Osobní</button>
@@ -39,9 +54,45 @@
             <label class="brand-item">
                 <input type="checkbox" value="Volkswagen"> Volkswagen
             </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Toyota"> Toyota
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Honda"> Honda
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Nissan"> Nissan
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="McLaren"> McLaren
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Ferrari"> Ferrari
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Lamborghini"> Lamborghini
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Harley-Davidson"> Harley-Davidson
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Kawasaki"> Kawasaki
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Yamaha"> Yamaha
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Ducati"> Ducati
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="KTM"> KTM
+            </label>
+            <label class="brand-item">
+                <input type="checkbox" value="Suzuki"> Suzuki
+            </label>
             <a href="#" class="show-all-brands">Zobrazit všechny značky</a>
         </div>
-        
+                    
         <div class="filter-grid">
             <label class="dropdown-container">
                 Model
@@ -49,7 +100,16 @@
                     <option value="">Model</option>
                     <option value="A4">A4</option>
                     <option value="C-Class">C-Class</option>
-
+                    <option value="Octavia">Octavia</option>
+                    <option value="Focus">Focus</option>
+                    <option value="Corolla">Corolla</option>
+                    <option value="Civic">Civic</option>
+                    <option value="Altima">Altima</option>
+                    <option value="Huracan">Huracan</option>
+                    <option value="488 GTB">488 GTB</option>
+                    <option value="Aventador">Aventador</option>
+                    <option value="720S">720S</option>
+                    
                 </select>
             </label>
 
@@ -57,16 +117,24 @@
                 Cena od
                 <select id="input-cena-min">
                     <option value="0">Cena od</option>
-                    <option value="100000">100 000 Kč</option>
                     <option value="500000">500 000 Kč</option>
+                    <option value="750000">750 000 Kč</option>
+                    <option value="1000000">1 000 000 Kč</option>
+                    <option value="1500000">1 500 000 Kč</option>
+                    <option value="2000000">2 000 000 Kč</option>
+                    <option value="3000000">3 000 000 Kč</option>
                 </select>
             </label>
             <label class="dropdown-container">
                 Cena do
                 <select id="input-cena-max">
-                    <option value="5000000">Cena do</option>
+                    <option value="10000000">Cena do</option>
+                    <option value="750000">750 000 Kč</option>
                     <option value="1000000">1 000 000 Kč</option>
-                    <option value="500000">500 000 Kč</option>
+                    <option value="1500000">1 500 000 Kč</option>
+                    <option value="2000000">2 000 000 Kč</option>
+                    <option value="3000000">3 000 000 Kč</option>
+                    <option value="5000000">5 000 000 Kč</option>
                 </select>
             </label>
 
@@ -75,8 +143,10 @@
                 <select id="input-rok-od">
                     <option value="0">Rok výroby od</option>
                     <option value="2020">2020</option>
-                    <option value="2018">2018</option>
-                    <option value="2015">2015</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
                 </select>
             </label>
             <label class="dropdown-container">
@@ -94,12 +164,15 @@
                     <option value="">Palivo</option>
                     <option value="Benzín">Benzín</option>
                     <option value="Nafta">Nafta</option>
+                    <option value="Elektro">Elektro</option>
                 </select>
             </label>
             <label class="dropdown-container">
                 Najeto do
                 <select id="input-najeto-do">
-                    <option value="500000">Najeto do</option>
+                    <option value="500000">Najeto do (km)</option>
+                    <option value="20000">20 000 km</option>
+                    <option value="50000">50 000 km</option>
                     <option value="100000">100 000 km</option>
                 </select>
             </label>
@@ -128,4 +201,72 @@
 
     <script src="app.js"></script>
 </body>
+
+<section id="onas-section" class="content-section onas-section">
+    <div class="section-content">
+        <h2>O nás</h2>
+        <p>
+            AutoBazar+ je moderní online autobazar zaměřený na přehledné a rychlé
+            vyhledávání kvalitních vozů.
+        </p>
+        <p>
+            Nabízíme prověřená auta, férové ceny a jednoduchý výběr bez zbytečných
+            komplikací.
+        </p>
+        <p>
+            S naší pokročilou filtrací si snadno najdeš auto svých snů. Všechna vozidla 
+            procházejí důkladnou inspekcí a garance kvality.
+        </p>
+    </div>
+</section>
+
+<section id="kontakt-section" class="content-section kontakt-section">
+    <div class="section-content">
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+            <p><strong>AutoBazar+</strong></p>
+            <p>📍 Praha, Česká republika</p>
+            <p>📞 +420 777 123 456</p>
+            <p>✉️ info@autobazarplus.cz</p>
+            <p>🕒 Po–Pá: 9:00 – 17:00</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>O nás</h3>
+            <p>AutoBazar+ je online platforma pro prodej a nákup vozidel s pokročilými filtračními možnostmi.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Rychlé odkazy</h3>
+            <ul>
+                <li><a href="#">Domů</a></li>
+                <li><a href="#">Vozidla</a></li>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Kontakt</h3>
+            <p>📍 Praha, Česká republika</p>
+            <p>📞 +420 777 123 456</p>
+            <p>✉️ info@autobazarplus.cz</p>
+        </div>
+        <div class="footer-section">
+            <h3>Sleduj nás</h3>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 AutoBazar+. Všechna práva vyhrazena.</p>
+    </div>
+</footer>
+
+
 </html>
